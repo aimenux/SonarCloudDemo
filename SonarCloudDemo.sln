@@ -13,6 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "test\Tests\Tests.c
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B4078198-421D-4DEC-A4A0-F7E6D4689BE6}"
 	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci.yml = .github\workflows\ci.yml
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -37,5 +38,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E554D304-A48C-49C7-8F38-C0BB63FA436F} = {FCD2AF07-ACFD-41AD-A64A-B9905E7B1A7A}
 		{11F87B3C-611D-4E7B-A6F3-26F67A071A44} = {C15B317A-12FB-43DD-BC05-76BF12E91E33}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9EFA16A-2F4C-4B7C-BFB3-CD4B5A0DC32E}
 	EndGlobalSection
 EndGlobal

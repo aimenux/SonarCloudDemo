@@ -1,3 +1,5 @@
+[![.NET](https://github.com/aimenux/SonarCloudDemo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/aimenux/SonarCloudDemo/actions/workflows/ci.yml)
+
 # SonarCloudDemo
 ```
 Using sonar cloud to analyse .net projects
