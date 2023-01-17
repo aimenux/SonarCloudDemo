@@ -27,7 +27,7 @@ jobs:
       - name: Test
         run: dotnet test --no-build --verbosity normal
       - name: SonarCloud Scan
-        uses: highbyte/sonarscan-dotnet@2.0
+        uses: highbyte/sonarscan-dotnet@v2.2.1
         with:
           sonarProjectKey: SonarCloudDemoKey
           sonarProjectName:  SonarCloudDemo
