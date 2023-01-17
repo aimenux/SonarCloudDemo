@@ -16,6 +16,24 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
+          
+  sonar:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0      
       - name: SonarCloud Scan
         uses: highbyte/sonarscan-dotnet@v2.2.1
         with:
@@ -24,4 +42,4 @@ jobs:
           sonarOrganization: aimenux-sonar-cloud-key
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}      
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}          
