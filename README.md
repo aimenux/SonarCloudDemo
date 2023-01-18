@@ -1,4 +1,5 @@
 [![.NET](https://github.com/aimenux/SonarCloudDemo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/aimenux/SonarCloudDemo/actions/workflows/ci.yml)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=SonarCloudDemo-Key&metric=coverage)](https://sonarcloud.io/summary/new_code?id=SonarCloudDemo-Key)
 
 # SonarCloudDemo
 ```
